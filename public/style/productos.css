@@ -4,6 +4,7 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .titulo-coccion {
@@ -24,12 +25,12 @@ h2 {
     transform: translate(50%, -50%);
     top: 100px;
     right: 600px;
-    text-shadow: 0 0 4px rgb(0 0 0 / 70%)
+    text-shadow: 0 0 4px rgb(0 0 0 / 70%);
 }
 
 .productos {
     margin-top: 125px;
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -43,11 +44,20 @@ h2 {
     align-items: center;
     gap: 15px;
 }
-
+.subtitulo {
+    width: 100%;
+    margin: 30px 5px;
+}
+.subtitulo h3 {
+    border-bottom: 3px solid #065799;
+}
+.nombre-producto {
+    font-weight: bolder;
+    text-align: center;
+}
 .imagen-prod {
     width: 50%;
     height: 300px;
-   
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     overflow: hidden;
     margin: 10px;
@@ -63,9 +73,13 @@ h2 {
     padding: 5px;
 }
 
-.descripcion-corta p {
-    font-family: Arial, Helvetica, sans-serif;
+.descripcion-corta a {
     color: #c92519;
+    text-decoration: none;
+}
+
+.descripcion-corta a:hover {
+    color: #fa1505;
 }
 
 @supports(object-fit: cover){
@@ -75,10 +89,11 @@ h2 {
       object-position: center center;
     }
 }
+
 @media screen and (max-width: 500px) {
     
     h2 {
-        right: 300px;
+        right: 280px;
         font-size: 2.5rem;
         margin-left: 220px; 
     }
@@ -90,8 +105,7 @@ h2 {
         
     }
     .imagen-prod {
-        width: 50%;
-        height: 300px;
+        width: 100%;
+        height: 360px;
     }
-
 }

@@ -125,7 +125,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        gap: 150px;
+        gap: 100px;
         float: none;
     }
     .btn-desplegar {
