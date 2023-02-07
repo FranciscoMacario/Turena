@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    background: rgb(133,34,29);
+    background: linear-gradient(182deg, rgba(133,34,29,1) 29%, rgba(170,44,38,1) 49%, rgba(201,37,25,1) 65%);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #065799;
+} 
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    float: left;
+    margin: 10px 30px;
+} 
+.logo {
+    float: left;
+    height: 100px;
+    width: 100%;
+}
+.logo > img {
+    object-fit: contain;
+    max-width: 150px;
+    max-height: 100%
+}
+.header a {
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.btn-desplegar {
+    display: none;
+    background: none;
+    border: none;
+    float: right;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    transform: rotate(90deg);
+    
+}
+
+.btn-rotate {
+    transform: rotate(0deg);
+}
+
+.header-right {
+    float: right;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-right li a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.header-right li a:hover {
+    background-color: #ac4a45;;
+    color: #ddd;
+}
+
+.header-right > li {
+    float: left;
+}
+
+.header-right li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    z-index: 10;
+}
+
+.header-right li:hover > ul {
+    display: block;
+}
+
+.sub-menu {
+    list-style: none;
+    background-color: #ac4a45;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+}
+
+.sub-menu li a {
+    text-align: left;
+    margin: 0;
+}
+
+.sub-menu li a:hover {
+    color: black;
+    background: #ddd;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        display: block;
+    }
+    .header-menu{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 150px;
+        float: none;
+    }
+    .btn-desplegar {
+        display: block;
+        
+    }
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+      flex-direction: column;
+      display: flex;
+      margin: 0 0 0 20px;
+    }
+}
