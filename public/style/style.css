@@ -3,15 +3,18 @@
     padding: 0;
 }
 .header {
-    overflow: hidden;
     padding: 20px 10px;
-    background: rgb(133,34,29);
-    background: linear-gradient(182deg, rgba(133,34,29,1) 29%, rgba(170,44,38,1) 49%, rgba(201,37,25,1) 65%);
+    background: #c92519;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid #065799;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 80px;
 } 
 .header-menu {
     display: flex;
@@ -45,10 +48,25 @@
     font-size: 25px;
     font-weight: bold;
 }
+.link {
+    position: relative;
+}
 
-.header a:hover {
-    background: #ddd;
-    color: black;
+.link:after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #2d88b6;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.link:hover:after {
+    width: 100%;
+    right: 0;
 }
 
 .btn-desplegar {
@@ -79,12 +97,6 @@
     display: block;
     text-decoration: none;
 }
-
-.header-right li a:hover {
-    background-color: #ac4a45;;
-    color: #ddd;
-}
-
 .header-right > li {
     float: left;
 }
@@ -93,7 +105,7 @@
     display: none;
     position: absolute;
     min-width: 140px;
-    z-index: 10;
+    z-index: 11;
 }
 
 .header-right li:hover > ul {
@@ -102,7 +114,7 @@
 
 .sub-menu {
     list-style: none;
-    background-color: #ac4a45;
+    background-color: #c92519;
     border-radius: 0 0 10px 10px;
     padding: 0;
 }
@@ -111,15 +123,14 @@
     text-align: left;
     margin: 0;
 }
-
-.sub-menu li a:hover {
-    color: black;
-    background: #ddd;
+.social {
+    gap: 40px;
 }
-
 @media screen and (max-width: 500px) {
     .header {
         display: block;
+        height: auto;
+        width: 100%;
     }
     .header-menu{
         flex-direction: row;
@@ -127,6 +138,9 @@
         align-items: center;
         gap: 100px;
         float: none;
+    }
+    .logo {
+        height: 100px;
     }
     .btn-desplegar {
         display: block;

@@ -49,7 +49,8 @@ h2 {
     margin: 30px 5px;
 }
 .subtitulo h3 {
-    border-bottom: 3px solid #065799;
+    border-bottom: 3px solid ;
+    border-image: linear-gradient(45deg, #065799, #2d88b6) 1;
 }
 .nombre-producto {
     font-weight: bolder;
@@ -80,6 +81,7 @@ h2 {
 
 .descripcion-corta a:hover {
     color: #fa1505;
+    cursor: pointer;
 }
 
 @supports(object-fit: cover){

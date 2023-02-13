@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/contact.css">
+    <link rel="icon" href="./img/logo-solo.png">
+    <title>Turena | Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-menu">
+            <div class="logo">
+                <img src="./img/logo-solo.png">
+            </div>
+            <button class="btn-desplegar" onclick="menuDesplegable()"><i class="fa-sharp fa-solid fa-circle-chevron-down"></i></button>
+        </div>
+        
+        <ul class="header-right">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a>Productos</a>
+                <ul class="sub-menu">
+                    <li><a href="#coccion">Cocción</a></li>
+                    <li><a href="#calefaccion">Calefacción</a></li>
+                    <li><a href="#agua">Agua caliente</a></li>
+                    <li><a href="#lavado">Lavado/Secado</a></li>
+                    <li><a href="#heladeras">Heladeras/Freezers</a></li>
+                </ul>
+            </li>
+            <li><a href="./about.html">Nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Puntos de venta</a></li>
+        </ul>
+    </header>
+    <section class="cuerpo">
+        <div class="contenedor-form">
+            <form class="form">
+                <h2>Contacto</h2>
+                <div class="parent-f">
+                    <div class="child-f">
+                        <p type="Nombre:"><input type="" placeholder="Ingresa tu nombre" name=""></p>
+                        <p type="E-mail:"><input type="" placeholder="Ingresa tu e-mail" name=""></p>
+                    </div>
+                    <div class="child-f">
+                        <p type="Telefono:"><input type="" placeholder="Ingresa tu teléfono" name=""></p>
+                        <p type="Dirección:"><input type="" placeholder="Ingresa tu dirección" name=""></p>
+                    </div>
+                    <div class="child-f-2">
+                        <p type="Asunto"><input type="" placeholder="Escribe el asunto" name="" class="asunto"></p>
+                        <p type=""><textarea type="" placeholder="Escribe tu mensaje aquí..." name="" class="mensaje"></textarea></p>
+                    </div>
+                </div>
+                <button class="btn-enviar" role="button">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./src/src.js"></script>
+    <script src="https://kit.fontawesome.com/fd697d25c0.js" crossorigin="anonymous"></script>
+</body>
+</html>
