@@ -9,32 +9,49 @@ html {
 
 .titulo-coccion {
     width: 100%;
-    height: 170px;
-    background-image: url('../img/coccion/banner/banner-coccion.jpg');
-    background-position: 25% 75%;
-    filter: blur(5px);
-    position: absolute;
-    z-index: -2;
+    height: 300px;
+    overflow: hidden;
+    line-height: 0;
+    position: relative;
+    border-top: 2px solid #065799;
 }
 
-h2 {
+.seccion-prod {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0px 10px 0px 50px;
+    /* line-height: 0; */
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 10;
+}
+
+.titulo-coccion > img {
+    width: 100%;
+    height: auto;
+    filter: blur(1.5px);
+}
+.seccion-prod > h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5rem;
     color: #ffffff;
-    position: relative;
+    /* position: relative;
     transform: translate(50%, -50%);
     top: 100px;
-    right: 600px;
+    right: 600px; */
     text-shadow: 0 0 4px rgb(0 0 0 / 70%);
+    
 }
 
 .productos {
-    margin-top: 125px;
-    padding: 50px;
+    padding: 0px 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .producto {
@@ -90,6 +107,12 @@ h2 {
       object-fit: cover;
       object-position: center center;
     }
+    .titulo-coccion > img {
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom right;
+    }
+
 }
 
 @media screen and (max-width: 500px) {

@@ -123,6 +123,11 @@
     text-align: left;
     margin: 0;
 }
+.container {
+    background-color: #fff;
+    width: 100%;
+    border-top: 0.5px solid rgba(192, 187, 187, 0.4);
+}
 .social {
     gap: 40px;
 }

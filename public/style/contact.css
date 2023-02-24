@@ -1,22 +1,22 @@
 
 body {
-    background: rgb(45,136,182);
-    background: radial-gradient(circle, rgba(45,136,182,1) 31%, rgba(6,106,187,1) 48%, rgba(6,87,153,1) 68%);
-    height: 100%;
-    
+   
 }
 
 .cuerpo {
     height: 100%;
+    background: rgb(45,136,182);
+    background: radial-gradient(circle, rgba(45,136,182,1) 31%, rgba(6,106,187,1) 48%, rgba(6,87,153,1) 68%);
+    padding: 100px 0;
 }
 
 .form {
-    width: 460px;
+    width: 500px;
     height: 100%;
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    margin: calc(50vh - 220px) auto;
+    margin: calc(27vh - 220px) auto;
     padding: 20px 15px;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
@@ -24,7 +24,7 @@ body {
     position: relative;
 }
 
-h2 {
+.titulo {
     margin: 10px 0;
     padding-bottom: 10px;
     width: 180px;
@@ -44,6 +44,7 @@ h2 {
     justify-content: center;
     flex-direction: row;
     gap: 20px;
+    
 }
 
 input {
@@ -73,7 +74,7 @@ p:before {
 textarea {
     height: 95px; 
     width: 393px;
-    resize: none;
+    resize: none !important;
     outline: none;
     background: none;
     border: 0;
@@ -113,6 +114,7 @@ textarea {
   width: 100%;
   will-change: transform;
   height: 40px;
+  margin-top: 20px;
 }
 
 .btn-enviar:disabled {
@@ -139,10 +141,13 @@ textarea {
         flex-wrap: wrap;
     }
     .asunto {
-        width: 100px;
+        width: 100%;
     }
     textarea {
-        width: 150px;
-        height: 40px;
+        width: 100%;
+        height: 100px;
+    }
+    .child-f-2 {
+        margin-bottom: 15px;
     }
 }

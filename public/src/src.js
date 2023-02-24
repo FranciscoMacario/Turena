@@ -8,4 +8,17 @@ function menuDesplegable() {
     let result2 = (opciones.style.display == 'none') ? opciones.style.display = 'flex' : opciones.style.display = 'none';
 }   
 
+const linkProd = document.querySelectorAll('.prod-link');
+
+linkProd.forEach(prodA => {
+    prodA.addEventListener('click', (e) => {
+        e.preventDefault();
+        var pagina = window.location.pathname;
+        
+        console.log(pagina);
+       
+    })
+})
+
+
 
