@@ -29,44 +29,55 @@ function traerDatos() {
             var bandera = 0;
 
             if(page == '/coccion.html') {
-                bandera = 1;
-            } else if(page == '/calefaccion'){ 
-                bandera = 2;
-            } else if(page == '/aguacaliente'){ 
-                bandera = 3;
-            } else if(page == '/lavadosecado'){ 
-                bandera = 4;
-            }else if(page == '/heladerasfreezers'){ 
-                bandera = 5;
+                bandera = 'coccion';
+            } else if(page == '/calefaccion.html'){ 
+                bandera = 'calefaccion';
+            } else if(page == '/aguacaliente.html'){ 
+                bandera = 'agua';
+            } else if(page == '/lavadosecado.html'){ 
+                bandera = 'lavado';
+            }else if(page == '/heladerasfreezers.html'){ 
+                bandera = 'heladeras';
             }
 
             for(let item of datos) {
-                if(subCategoria != item.subCategoria){
+
+                if(subCategoria != item.subCategoria && item.categoria == bandera){
                     subCategoria = item.subCategoria;
-                    contenedorProductos.innerHTML += `<h3>${subCategoria}</h3>`
+                    titulo = subCategoria;
+                    titulo = titulo[0].toUpperCase() + titulo.substring(1);
+                    contenedorProductos.innerHTML += `<div class="subtitulo"><h3>${titulo}</h3></div>`
                 }
-              
-                contenedorProductos.innerHTML += /* html */ 
-                `<div class="producto">
-                    <div class="nombre-producto">
-                        <p>${item.nombre}</p>
-                    </div>
-                    <div class="imagen-prod">
-                        <img src="${item.urlImagen}" alt="">
-                    </div>
-                    <div class="descripcion-corta">
-                        <a>${item.descripcionCorta}</a>
-                    </div>
-                </div>`
-                
+
+                if(bandera == item.categoria ) {
+                    contenedorProductos.innerHTML += constructorProductos(item.nombre, item.urlImagen, item.descripcionCorta); 
+                } 
             }
         }
     }
 }
 
 
+// function constructorSubtitulos(subCat) {
+    
+// }
 
 
+function constructorProductos(nombre, imagen, descripcion) {
+        
+     var cuerpo = /* html */`<div class="producto">
+                        <div class="nombre-producto">
+                            <p>${nombre}</p>
+                        </div>
+                        <div class="imagen-prod">
+                            <img src="${imagen}" alt="">
+                        </div>
+                        <div class="descripcion-corta">
+                            <a>${descripcion}</a>
+                        </div>
+                    </div>`;
+    return cuerpo;
+}
 
 
 

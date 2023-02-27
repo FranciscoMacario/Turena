@@ -1,6 +1,7 @@
 [
     {
         "id": 0,
+        "categoria": "coccion",
         "nombre": "COCINA TURENA MOD. 483 CPE",
         "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
         "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
@@ -8,14 +9,34 @@
     },
     {
         "id": 1,
+        "categoria": "coccion",
         "nombre": "COCINA TURENA MOD. 483 CPE",
         "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
-        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón."
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "hornos"
     },
     {
         "id": 2,
+        "categoria": "coccion",
         "nombre": "COCINA TURENA MOD. 483 CPE",
         "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
-        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón."
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "hornos"
+    },
+    {
+        "id": 3,
+        "categoria": "coccion",
+        "nombre": "campana",
+        "urlImagen": "./img/coccion/campana-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "campanas"
+    },
+    {
+        "id": 4,
+        "categoria": "heladeras",
+        "nombre": "freezer",
+        "urlImagen": "./img/coccion/freezer-310-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "freezer"
     }
 ]
