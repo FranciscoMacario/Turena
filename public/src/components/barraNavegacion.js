@@ -15,11 +15,11 @@ class navBar extends HTMLElement {
                         <li><a href="./index.html" class="link">Inicio</a></li>
                         <li><a class="link">Productos</a>
                             <ul class="sub-menu">
-                                <li><a href="#coccion" class="link prod-link" id="coccion">Cocción</a></li>
-                                <li><a href="#calefaccion" class="link prod-link" id="calefaccion">Calefacción</a></li>
-                                <li><a href="#agua" class="link prod-link" id="agua">Agua caliente</a></li>
-                                <li><a href="#lavado" class="link prod-link" id="lavado">Lavado/Secado</a></li>
-                                <li><a href="#heladeras" class="link prod-link" id="heladeras">Heladeras/Freezers</a></li>
+                                <li><a href="./coccion.html" class="link prod-link" id="coccion.html">Cocción</a></li>
+                                <li><a href="./calefaccion" class="link prod-link" id="calefaccion">Calefacción</a></li>
+                                <li><a href="./aguacaliente" class="link prod-link" id="aguacaliente">Agua caliente</a></li>
+                                <li><a href="./lavadosecado" class="link prod-link" id="lavadosecado">Lavado/Secado</a></li>
+                                <li><a href="./heladerasfreezers" class="link prod-link" id="heladerasfreezers">Heladeras/Freezers</a></li>
                             </ul>
                         </li>
                         <li><a href="./about.html" class="link">Nosotros</a></li>
@@ -36,3 +36,12 @@ class navBar extends HTMLElement {
 }
 
 window.customElements.define("nav-bar", navBar);
+
+function menuDesplegable() {
+    var boton_desplegar = document.querySelector('.btn-desplegar');
+    var opciones = document.querySelector('.header-right');
+
+    let result = (boton_desplegar.classList.contains('btn-rotate')) ? boton_desplegar.classList.remove('btn-rotate') : boton_desplegar.classList.add('btn-rotate');
+
+    let result2 = (opciones.style.display == 'none') ? opciones.style.display = 'flex' : opciones.style.display = 'none';
+}   

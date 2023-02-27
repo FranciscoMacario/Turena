@@ -1,0 +1,21 @@
+[
+    {
+        "id": 0,
+        "nombre": "COCINA TURENA MOD. 483 CPE",
+        "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "hornos"
+    },
+    {
+        "id": 1,
+        "nombre": "COCINA TURENA MOD. 483 CPE",
+        "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón."
+    },
+    {
+        "id": 2,
+        "nombre": "COCINA TURENA MOD. 483 CPE",
+        "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón."
+    }
+]
