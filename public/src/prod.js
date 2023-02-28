@@ -73,7 +73,7 @@ function constructorProductos(nombre, imagen, descripcion) {
                             <img src="${imagen}" alt="">
                         </div>
                         <div class="descripcion-corta">
-                            <a>${descripcion}</a>
+                            <a class="desc-link">${descripcion}</a>
                         </div>
                     </div>`;
     return cuerpo;

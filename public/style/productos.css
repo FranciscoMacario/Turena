@@ -60,6 +60,7 @@ html {
     flex-wrap: nowrap;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
 }
 .subtitulo {
     width: 100%;
@@ -91,12 +92,12 @@ html {
     padding: 5px;
 }
 
-.descripcion-corta a {
+.desc-link {
     color: #c92519;
     text-decoration: none;
 }
 
-.descripcion-corta a:hover {
+.desc-link:hover {
     color: #fa1505;
     cursor: pointer;
 }

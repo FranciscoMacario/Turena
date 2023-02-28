@@ -24,7 +24,7 @@ class navBar extends HTMLElement {
                         </li>
                         <li><a href="./about.html" class="link">Nosotros</a></li>
                         <li><a href="./contact.html" class="link">Contacto</a></li>
-                        <li><a href="" class="link">Puntos de venta</a></li>
+                        <li><a href="./puntosdeventa.html" class="link">Puntos de venta</a></li>
                     </ul>
                 </nav>
             </header>`; 

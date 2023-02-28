@@ -128,8 +128,20 @@
     width: 100%;
     border-top: 0.5px solid rgba(192, 187, 187, 0.4);
 }
+
+.link-foot:hover {
+    color: #065799;
+}
 .social {
     gap: 40px;
+}
+
+.link-foot-social {
+    color: #727171;
+    font-size: 20px;
+}
+.link-foot-social:hover {
+    color: #525252;
 }
 @media screen and (max-width: 500px) {
     .header {
