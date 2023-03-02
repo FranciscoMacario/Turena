@@ -1,15 +1,5 @@
-// const bannerCategoria = document.querySelector('titulo-seccion');
-
-// if(bannerCategoria) {
-//     bannerCategoria.imgDirection = "./img/coccion/banner/banner-coccion.jpg";
-//     bannerCategoria.tituloDeLaSeccion = 'Holaaa';
-// } else {
-//     console.log('aiuda');
-// }
-
-
 const contenedorProductos = document.querySelector('.prodTemplate');
-console.log(contenedorProductos);
+
 contenedorProductos.addEventListener('afterprint', traerDatos());
 
 function traerDatos() {
@@ -27,6 +17,7 @@ function traerDatos() {
             let datos = JSON.parse(this.responseText);
             let subCategoria;
             var bandera = 0;
+           
 
             if(page == '/coccion.html') {
                 bandera = 'coccion';
@@ -56,12 +47,6 @@ function traerDatos() {
         }
     }
 }
-
-
-// function constructorSubtitulos(subCat) {
-    
-// }
-
 
 function constructorProductos(nombre, imagen, descripcion) {
         

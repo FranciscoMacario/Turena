@@ -128,7 +128,12 @@
     width: 100%;
     border-top: 0.5px solid rgba(192, 187, 187, 0.4);
 }
-
+.cuerpo { /*pertenece a pts de venta*/
+    background: rgb(45,136,182);
+    background: radial-gradient(circle, rgba(45,136,182,1) 31%, rgba(6,106,187,1) 48%, rgba(6,87,153,1) 68%);
+    height: 100%;
+    padding: 30px;
+}
 .link-foot:hover {
     color: #065799;
 }
