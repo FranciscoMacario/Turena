@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -25,7 +26,7 @@ html {
     position: absolute;
     top: 100px;
     left: 0;
-    z-index: 9;
+    /* z-index: 8; */
 }
 
 .titulo-coccion > img {
@@ -60,7 +61,7 @@ html {
     flex-wrap: nowrap;
     align-items: center;
     gap: 15px;
-    cursor: pointer;
+    
 }
 .subtitulo {
     width: 100%;
@@ -92,14 +93,113 @@ html {
     padding: 5px;
 }
 
-.desc-link {
+.descripcion-corta span {
     color: #c92519;
-    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.desc-link:hover {
+.descripcion-corta span:hover {
     color: #fa1505;
     cursor: pointer;
+}
+
+.ventana-modal {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   padding-top: 80px;
+}
+
+.mostrar {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.moda {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;   
+}
+
+.contenedor-mod-gri {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.contenedor-mod-gri .boton-titulo,
+.contenedor-mod-gri .img-modal,
+.contenedor-mod-gri .caracteristicas,
+.contenedor-mod-gri .tablas {
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.contenedor-mod-gri .boton-titulo {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.boton-titulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boton-titulo button {
+    border: none;
+    background: none;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.boton-titulo button:hover {
+    color: rgb(45, 136, 182);
+    filter: drop-shadow(0 2px 3px rgba(45, 136, 182, 0.7));;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.caracteristicas ul {
+    text-align: left;
+}
+.tablas {
+    align-items: center;
+}
+.consumo {
+    margin-bottom: 5px;
+}
+.tablas tr, .tablas td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.tablas td p {
+    margin: 0;
+}
+
+.tablas tr {
+    background-color: #ddd;
 }
 
 @supports(object-fit: cover){
@@ -134,4 +234,71 @@ html {
         width: 100%;
         height: 360px;
     }
+    .contenedor-mod-gri {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    
+    .contenedor-mod-gri .boton-titulo,
+    .contenedor-mod-gri .img-modal,
+    .contenedor-mod-gri .caracteristicas,
+    .contenedor-mod-gri .tablas {
+        padding: 20px;
+        border-radius: 3px;
+    }
+    
+    .contenedor-mod-gri .boton-titulo {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+    .boton-titulo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .boton-titulo button {
+        border: none;
+        background: none;
+        font-size: 30px;
+        margin-right: 50px;
+    }
+    
+    .boton-titulo button:hover {
+        color: rgb(45, 136, 182);
+        filter: drop-shadow(0 2px 3px rgba(45, 136, 182, 0.7));;
+    }
+    
+    .caracteristicas {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .caracteristicas ul {
+        text-align: left;
+    }
+    .tablas {
+        align-items: center;
+    }
+    .consumo {
+        margin-bottom: 5px;
+    }
+    .tablas tr, .tablas td {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+    
+    .tablas td p {
+        margin: 0;
+    }
+    
+    .tablas tr {
+        background-color: #ddd;
+    }
+
 }
