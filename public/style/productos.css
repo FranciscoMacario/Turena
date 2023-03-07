@@ -8,7 +8,11 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.titulo-coccion {
+.titulo-coccion,
+.titulo-calefaccion,
+.titulo-agua,
+.titulo-lavado,
+.titulo-heladeras {
     width: 100%;
     height: 300px;
     overflow: hidden;
@@ -18,22 +22,26 @@ html {
 }
 
 .seccion-prod {
-    width: 100%;
     padding: 0 15px;
     margin: 0px 10px 0px 50px;
     /* line-height: 0; */
     width: 100%;
     position: absolute;
     top: 100px;
-    left: 0;
+    /* left: 0; */
     /* z-index: 8; */
 }
 
-.titulo-coccion > img {
+.titulo-coccion > img, 
+.titulo-calefaccion > img,
+.titulo-agua > img,
+.titulo-lavado > img,
+.titulo-heladeras >img {
     width: 100%;
     height: auto;
-    filter: blur(1.5px);
+    filter: blur(2.5px);
 }
+
 .seccion-prod > h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3.5rem;
@@ -93,14 +101,15 @@ html {
     padding: 5px;
 }
 
-.descripcion-corta span {
+.descripcion-corta a {
+    text-decoration: none;
     color: #c92519;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.descripcion-corta span:hover {
+.descripcion-corta a:hover {
     color: #fa1505;
     cursor: pointer;
 }
@@ -203,21 +212,40 @@ html {
 }
 
 @supports(object-fit: cover){
-    .imagen-prod img{
+    .imagen-prod img {
       height: 100%;
       object-fit: cover;
       object-position: center center;
     }
+
     .titulo-coccion > img {
         height: 100%;
         object-fit: cover;
         object-position: bottom right;
     }
 
+    .titulo-calefaccion > img, 
+    .titulo-heladeras > img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .titulo-agua > img {
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .titulo-lavado > img {
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    
+    .seccion-prod {
+        right: 50%;
+    }
     h2 {
         right: 280px;
         font-size: 2.5rem;
@@ -234,71 +262,4 @@ html {
         width: 100%;
         height: 360px;
     }
-    .contenedor-mod-gri {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-    }
-    
-    .contenedor-mod-gri .boton-titulo,
-    .contenedor-mod-gri .img-modal,
-    .contenedor-mod-gri .caracteristicas,
-    .contenedor-mod-gri .tablas {
-        padding: 20px;
-        border-radius: 3px;
-    }
-    
-    .contenedor-mod-gri .boton-titulo {
-        grid-column-start: 1;
-        grid-column-end: -1;
-    }
-    .boton-titulo {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .boton-titulo button {
-        border: none;
-        background: none;
-        font-size: 30px;
-        margin-right: 50px;
-    }
-    
-    .boton-titulo button:hover {
-        color: rgb(45, 136, 182);
-        filter: drop-shadow(0 2px 3px rgba(45, 136, 182, 0.7));;
-    }
-    
-    .caracteristicas {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .caracteristicas ul {
-        text-align: left;
-    }
-    .tablas {
-        align-items: center;
-    }
-    .consumo {
-        margin-bottom: 5px;
-    }
-    .tablas tr, .tablas td {
-        border: 1px solid #000;
-        padding: 5px;
-    }
-    
-    .tablas td p {
-        margin: 0;
-    }
-    
-    .tablas tr {
-        background-color: #ddd;
-    }
-
 }
