@@ -4,8 +4,8 @@ contenedorProductos.addEventListener('afterprint', traerDatos());
 
 function traerDatos() {
     const xhttp = new XMLHttpRequest();
-
-    xhttp.open('GET', '../data/productos.json', true);
+	//'../data/productos.json'
+    xhttp.open('GET', 'https://franciscomacario.github.io/Turena/data/productos.json', true);
 
     xhttp.send();
 
