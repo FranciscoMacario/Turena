@@ -32,11 +32,11 @@ html {
     /* z-index: 8; */
 }
 
-.titulo-coccion > img, 
-.titulo-calefaccion > img,
-.titulo-agua > img,
-.titulo-lavado > img,
-.titulo-heladeras >img {
+.titulo-coccion .imagen-banner, 
+.titulo-calefaccion .imagen-banner,
+.titulo-agua .imagen-banner,
+.titulo-lavado .imagen-banner,
+.titulo-heladeras .imagen-banner {
     width: 100%;
     height: auto;
     filter: blur(2.5px);
@@ -212,30 +212,30 @@ html {
 }
 
 @supports(object-fit: cover){
-    .imagen-prod img {
+    .imagen-prod .imagen-banner {
       height: 100%;
       object-fit: cover;
       object-position: center center;
     }
 
-    .titulo-coccion > img {
+    .titulo-coccion .imagen-banner {
         height: 100%;
         object-fit: cover;
         object-position: bottom right;
     }
 
-    .titulo-calefaccion > img, 
-    .titulo-heladeras > img {
+    .titulo-calefaccion .imagen-banner, 
+    .titulo-heladeras .imagen-banner {
         height: 100%;
         object-fit: cover;
     }
 
-    .titulo-agua > img {
+    .titulo-agua .imagen-banner {
         height: 100%;
         object-fit: cover;
         object-position: left;
     }
-    .titulo-lavado > img {
+    .titulo-lavado .imagen-banner {
         height: 100%;
         object-fit: cover;
         object-position: bottom;
