@@ -5,7 +5,7 @@ contenedorProductos.addEventListener('afterprint', traerDatos());
 function traerDatos() {
     const xhttp = new XMLHttpRequest();
 	//'../data/productos.json'
-    xhttp.open('GET', '/Turena/data/productos.json', true);
+    xhttp.open('GET', '../../data/productos.json', true);
 
     xhttp.send();
 
