@@ -35,7 +35,7 @@
         "id": 4,
         "categoria": "heladeras",
         "nombre": "freezer",
-        "urlImagen": "./img/freezer-310-gde.png",
+        "urlImagen": "./img/heladeras/freezer-310-gde.png",
         "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
         "subCategoria": "freezer"
     }

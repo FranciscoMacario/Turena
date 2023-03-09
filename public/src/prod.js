@@ -4,8 +4,8 @@ contenedorProductos.addEventListener('afterprint', traerDatos());
 
 function traerDatos() {
     const xhttp = new XMLHttpRequest();
-
-    xhttp.open('GET', '../data/productos.json', true);
+	//'../data/productos.json'
+    xhttp.open('GET', '/Turena/productos.json', true);
 
     xhttp.send();
 
@@ -34,8 +34,6 @@ function traerDatos() {
             for(let item of datos) {
 
                 if(subCategoria != item.subCategoria && item.categoria == bandera){
-                    const tituloBanner = document.querySelector('imagen-banner');
-                    tituloBanner.setAttribute("direccionImagen", "./img/coccion/banner/banner-coccion.jpg");
                     subCategoria = item.subCategoria;
                     titulo = subCategoria;
                     titulo = titulo[0].toUpperCase() + titulo.substring(1);
