@@ -60,7 +60,7 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .producto {
@@ -68,8 +68,7 @@ html {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 15px;
-    
+    gap: 15px;  
 }
 .subtitulo {
     width: 100%;
@@ -85,7 +84,7 @@ html {
 }
 .imagen-prod {
     width: 50%;
-    height: 300px;
+    height: 340px;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     overflow: hidden;
     margin: 10px;
@@ -101,7 +100,7 @@ html {
     padding: 5px;
 }
 
-.descripcion-corta a {
+.descripcion-corta .selector {
     text-decoration: none;
     color: #c92519;
     font-size: 17px;
@@ -109,7 +108,7 @@ html {
     cursor: pointer;
 }
 
-.descripcion-corta a:hover {
+.descripcion-corta .selector:hover {
     color: #fa1505;
     cursor: pointer;
 }
@@ -126,7 +125,7 @@ html {
     left: 0;
     height: 100%;
     width: 100%;
-   padding-top: 80px;
+    padding-top: 80px;
 }
 
 .mostrar {
@@ -252,7 +251,7 @@ html {
         margin-left: 220px; 
     }
     .productos {
-        margin-top: 150px;
+        margin-top: 10px;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
@@ -260,6 +259,39 @@ html {
     }
     .imagen-prod {
         width: 100%;
-        height: 360px;
+        height: 110vw;
+    }
+    .ventana-modal {
+        padding-top: 0;
+        z-index: 999;
+    }
+    .moda {
+        width: 99%;
+        padding: 30px 10px;
+        height: calc(730px - 50vw);
+        overflow: scroll;
+    }
+    .contenedor-mod-gri {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-mod-gri .boton-titulo,
+    .contenedor-mod-gri .img-modal,
+    .contenedor-mod-gri .caracteristicas,
+    .contenedor-mod-gri .tablas {
+        padding: 0px;
+    }
+    .caracteristicas > ul {
+        padding: 0 30px
+    }
+    .tablas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .tablas tr, .tablas td {
+        padding: 1px;
     }
 }
