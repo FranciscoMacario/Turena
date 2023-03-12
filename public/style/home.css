@@ -1,0 +1,54 @@
+.contenedor-home {
+    height: 100%;
+    background: rgb(45,136,182);
+    background: radial-gradient(circle, rgba(45,136,182,1) 31%, rgba(6,106,187,1) 48%, rgba(6,87,153,1) 68%);
+}
+
+.item-slider {
+    height: 65vh;
+    min-height: 300px;
+}
+
+.ver-productos {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid #2d88b6;
+}
+
+.ver-productos:hover {
+    animation: fill .5s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+
+    0% {
+        background: rgb(45,136,182);
+        background: linear-gradient(180deg, rgba(45,136,182,0) 52%, rgba(45,136,182,1) 80%);
+    }
+
+    30% {
+        background: rgb(45,136,182);
+        background: linear-gradient(180deg, rgba(45,136,182,0) 36%, rgba(45,136,182,1) 56%);
+    }
+
+    50% {
+        background: rgb(45,136,182);
+        background: linear-gradient(180deg, rgba(45,136,182,0) 9%, rgba(45,136,182,1) 41%);
+    }
+
+    75% {
+        background: rgb(45,136,182);
+        background: linear-gradient(180deg, rgba(45,136,182,0) 0%, rgba(45,136,182,1) 25%);
+    }
+
+    100% {
+        background: rgb(45,136,182);
+        background: linear-gradient(180deg, rgba(45,136,182,0) 0%, rgba(45,136,182,1) 25%);
+    }
+
+}
