@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "categoria": "coccion",
+        "nombre": "COCINA TURENA MOD. 483 CPE",
+        "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "hornos",
+        "masDetalles":[
+            {
+                "caracteristica1":"Características ancho 55cm. Alto 87 cm. Prof.: 57 cm. Peso aprox.: 40kg. Puerta de vidrio espejado con marco de acero inoxidable y manijas cromadas.",
+                "caracteristica2":"Plancha Superior es una amplia bandeja recolectora desmontable de 1250 cm3 de capacidad antiderrame y fácil limpieza.",
+                "caracteristica3":"Rejilla Superior de acero enlozada y gran solidez.",
+                "caracteristica4":"Panel de mando: Esmaltado de fácil manejo, equipado con válvulas de seguridad en el horno y en las hornallas, que en caso de ausencia de llama corta el paso del gas al mismo.",
+                "caracteristica5":"Horno de gran capacidad 64l , con enlozado autolimpiante, óptimo balance térmico y calor envolvente, aseguran una cocción pareja y uniforme de los alimentos.",
+                "caracteristica7":""  
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "categoria": "coccion",
+        "nombre": "COCINA TURENA MOD. 483 CPE",
+        "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "hornos",
+        "masDetalles":[
+            {
+                "caracteristica1":"Características ancho 55cm. Alto 87 cm. Prof.: 57 cm. Peso aprox.: 40kg. Puerta de vidrio espejado con marco de acero inoxidable y manijas cromadas.",
+                "caracteristica2":"Plancha Superior es una amplia bandeja recolectora desmontable de 1250 cm3 de capacidad antiderrame y fácil limpieza.",
+                "caracteristica3":"Rejilla Superior de acero enlozada y gran solidez.",
+                "caracteristica4":"Panel de mando: Esmaltado de fácil manejo, equipado con válvulas de seguridad en el horno y en las hornallas, que en caso de ausencia de llama corta el paso del gas al mismo.",
+                "caracteristica5":"Horno de gran capacidad 64l , con enlozado autolimpiante, óptimo balance térmico y calor envolvente, aseguran una cocción pareja y uniforme de los alimentos.",
+                "caracteristica7":""  
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "categoria": "coccion",
+        "nombre": "COCINA TURENA MOD. 483 CPE",
+        "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "hornos",
+        "masDetalles":[
+            {
+                "caracteristica1":"n marco de acero inoxidable y manijas cromadas.",
+                "caracteristica2":"Plancha Superior es una amplia bandeja recolectora desmontable de 1250 cm3 de capacidad antiderrame y fácil limpieza.",
+                "caracteristica3":"Rejilla Superior de acero enlozada y gran solidez.",
+                "caracteristica4":"Panel de mando: Esmaltado de fácil manejo, equipado con válvulas de seguridad en el horno y en las hornallas, que en caso de ausencia de llama corta el paso del gas al mismo.",
+                "caracteristica5":"Horno de gran capacidad 64l , con enlozado autolimpiante, óptimo balance térmico y calor envolvente, aseguran una cocción pareja y uniforme de los alimentos.",
+                "caracteristica7":""  
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "categoria": "coccion",
+        "nombre": "COCINA TURENA MOD. 483 CPE",
+        "urlImagen": "./img/coccion/cocina-483-ta-gde.png",
+        "descripcionCorta": "4 Hornallas, Parrilla, Puerta de vidrio espejado. Marrón.",
+        "subCategoria": "hornos",
+        "masDetalles":[
+            {
+                "caracteristica1":"Características ancho 55cm. Alto 87 cm. Prof.: 57 cm. Peso aprox.: 40kg. Puerta de vidrio espejado con marco de acero inoxidable y manijas cromadas.",
+                "caracteristica2":"Plancha Superior es una amplia bandeja recolectora desmontable de 1250 cm3 de capacidad antiderrame y fácil limpieza.",
+                "caracteristica3":"Rejilla Superior de acero enlozada y gran solidez.",
+                "caracteristica4":"Panel de mando: Esmaltado de fácil manejo, equipado con válvulas de seguridad en el horno y en las hornallas, que en caso de ausencia de llama corta el paso del gas al mismo.",
+                "caracteristica5":"Horno de gran capacidad 64l , con enlozado autolimpiante, óptimo balance térmico y calor envolvente, aseguran una cocción pareja y uniforme de los alimentos.",
+                "caracteristica7":""  
+            }
+        ]
+    }
+]

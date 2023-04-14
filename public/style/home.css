@@ -52,3 +52,10 @@
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    .ver-productos {
+        top: 40vw;
+        left: 35%;
+    }
+}
